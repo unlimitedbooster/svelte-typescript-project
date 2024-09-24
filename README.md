@@ -3,32 +3,6 @@
 This repository shows how [`Svelte`](https://svelte.dev/) and [`SvelteKit`](https://kit.svelte.dev/)
 work together with [`TypeScript`](https://www.typescriptlang.org/).
 
-> This repository should offer an overview of all `TypeScript` related topics for `Svelte` and
-> `SvelteKit`\
-> Feel free to contribute by [creating a PR](https://github.com/ivanhofer/sveltekit-typescript-showcase/pulls)
-> or [open an issue](https://github.com/ivanhofer/sveltekit-typescript-showcase/issues) if you think
-> something is missing.
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------>
-
-## Who am I
-
-Hi, I'm Ivan, a passionate webdeveloper.
-
-I recently have been working more intensively with `TypeScript` when I have created an
-internationalization library focusing on developer experience with strong typesafety features:
-[`typesafe-i18n`](https://github.com/ivanhofer/typesafe-i18n)
-
-I know and love `Svelte` for a few years now. Over the years I saw how my development workflow
-improved and now together with `TypeScript`, I'm able to build real business applications with
-confidence. When I started with `Svelte`, the missing `TypeScript` support always bothered me. And
-once I could use `TypeScript` in my `Svelte` projects I still found it not so easy because of some
-missing documentation. That's why I decided to create this repository with some examples that should
-help you learn the concepts better. I hope you find it useful.
-
-[Become a sponsor :heart:](https://github.com/sponsors/ivanhofer) if you want to support my open source contributions.
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 
@@ -82,13 +56,13 @@ asked a few questions. Of course you should select the `TypeScript` option.
 ### Configure TypeScript
 
 In the root of the generated folder, you should see a
-[`tsconfig.json` file](https://github.com/ivanhofer/sveltekit-typescript-showcase/blob/main/tsconfig.json).
+[`tsconfig.json` file](https://github.com/extremeeventer/sveltekit-typescript-showcase/blob/main/tsconfig.json).
 I recommend you to configure `TypeScript` as strict as possible to benefit from the advanced
 type-checking features.
 
 > As of writing these are the strictest options I know. This list will grow with new `TypeScript`
 > releases.\
-> Please [create a PR](https://github.com/ivanhofer/sveltekit-typescript-showcase/pulls) if you know
+> Please [create a PR](https://github.com/extremeeventer/sveltekit-typescript-showcase/pulls) if you know
 > more options that should be enabled.
 
 ```jsonc
@@ -123,7 +97,7 @@ write our own preprocessor because there exists already an
 [official package](https://github.com/sveltejs/svelte-preprocess) we can use. `svelte-preprocess`
 enables us to use `TypeScript` and also custom CSS syntax like `SCSS` or `PostCSS` without much
 effort. If you take a look at the
-[`svelte.config.js` file](https://github.com/ivanhofer/sveltekit-typescript-showcase/blob/main/svelte.config.js),
+[`svelte.config.js` file](https://github.com/extremeeventer/sveltekit-typescript-showcase/blob/main/svelte.config.js),
 you see that this was arleady set up for us.
 
 The next step will be to create our first Component and use `TypeScript` inside the `script`-tag.
@@ -252,26 +226,26 @@ the examples inside `VS Code` to have proper syntax-highlighting in place.
 This chapter teaches you everything about how you can use `TypeScript` to improve your component's
 props.
 
--  **[basics](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/01-basics)**:
+-  **[basics](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/01-basics)**:
    how to define types for props
--  **[optional props](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/02-optional-props)**:
+-  **[optional props](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/02-optional-props)**:
    how to mark props as optional
--  **[control flow](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/03-control-flow)**:
+-  **[control flow](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/03-control-flow)**:
    how does it work inside the html markup **[(TS-tipp #1)](#1-union-types)**
--  **[reactive assignments](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/04-reactive-assignments)**:
+-  **[reactive assignments](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/04-reactive-assignments)**:
    how to type reactive statements
    > https://svelte.dev/docs#component-format-script-3-$-marks-a-statement-as-reactive
--  **[generic props](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/05-generic-props)**:
+-  **[generic props](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/05-generic-props)**:
    how to use generics for props
--  **[\$$Props](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/06-$$Props)**:
+-  **[\$$Props](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/06-$$Props)**:
    how to extend the defined props of your components
--  **[call exported function](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/07-call-exported-function)**:
+-  **[call exported function](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/07-call-exported-function)**:
    how to call an exported function from the parent
--  **[either or](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/08-either-or)**:
+-  **[either or](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/08-either-or)**:
    expect either param A or param B
--  **[svelte:component](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/09-svelte-component)**:
+-  **[svelte:component](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/09-svelte-component)**:
    getting prop-types of a component (useful for `svelte:component`)
--  **[prop controls type](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/10-prop-controls-type)**:
+-  **[prop controls type](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/10-prop-controls-type)**:
    using a prop to control the type of another prop e.g passing single vs multiple items
 
 <!------------------------------------------------------------------------------------------------>
@@ -280,10 +254,10 @@ props.
 
 In this chapter you will learn how to interact directly with DOM-elements.
 
--  **[DOM element bindings](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/02-dom/01-dom-bindings)**:
+-  **[DOM element bindings](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/02-dom/01-dom-bindings)**:
    how to type your element bindings
    > https://svelte.dev/docs#template-syntax-element-directives-bind-this
--  **[actions](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/02-dom/02-actions)**:
+-  **[actions](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/02-dom/02-actions)**:
    how to define actions in a typesafe way
    > https://svelte.dev/docs#template-syntax-element-directives-use-action
 
@@ -295,15 +269,15 @@ In this chapter you will learn how to interact directly with DOM-elements.
 
 This chapter shows how you can define events that a component emits.
 
--  **[basics](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/03-events/01-basics)**:
+-  **[basics](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/03-events/01-basics)**:
    how to emit events
--  **[typed event details](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/03-events/02-typed-event-details)**:
+-  **[typed event details](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/03-events/02-typed-event-details)**:
    how to type the emitted events **[(TS-tipp #2)](#2-extend-existing-type-definitions)**
--  **[generic events](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/03-events/03-generic-events)**:
+-  **[generic events](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/03-events/03-generic-events)**:
    how to use generics in your events
--  **[\$$Events](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/03-events/04-$$Events)**:
+-  **[\$$Events](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/03-events/04-$$Events)**:
    how to extend the defined events of your components
--  **[strictEvents](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/03-events/05-strictEvents)**:
+-  **[strictEvents](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/03-events/05-strictEvents)**:
    how to disallow to listen for other events than the ones defined in a component
 
 <!------------------------------------------------------------------------------------------------>
@@ -312,21 +286,21 @@ This chapter shows how you can define events that a component emits.
 
 > https://svelte.dev/docs#template-syntax-slot
 
--  **[basics](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/04-slots/01-basics)**:
+-  **[basics](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/04-slots/01-basics)**:
    how to define slots and expose props
--  **[named](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/04-slots/02-named-slots)**:
+-  **[named](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/04-slots/02-named-slots)**:
    how to define named slots and expose props
    > https://svelte.dev/docs#template-syntax-slot-slot-name-name
--  **[\$$Slots](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/04-slots/03-$$Slots)**:
+-  **[\$$Slots](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/04-slots/03-$$Slots)**:
    how to extend the defined slots of your components
 
 <!------------------------------------------------------------------------------------------------>
 
 #### external components
 
--  **[SvelteComponent](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/05-external-components)**:
+-  **[SvelteComponent](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/05-external-components)**:
    how to write type definitions for external components
--  **[`svelte-kit package`](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/lib)**:
+-  **[`svelte-kit package`](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/lib)**:
    how to create a `Svelte` component library
 
    > https://kit.svelte.dev/docs/packaging
@@ -341,14 +315,14 @@ This chapter shows how you can define events that a component emits.
 
 #### state management
 
--  **[stores](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/06-state-management/01-stores)**:
+-  **[stores](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/06-state-management/01-stores)**:
    how to type your stores
    > https://svelte.dev/docs#run-time-svelte-store
 -  **context**
-   -  **[inline](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/06-state-management/02-context-inline)**:
+   -  **[inline](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/06-state-management/02-context-inline)**:
       how to type contexts
       > https://svelte.dev/docs#run-time-svelte-setcontext
-   -  **[outsourced](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/06-state-management/03-context-outsourced)**:
+   -  **[outsourced](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/06-state-management/03-context-outsourced)**:
       how to wrap contexts with `TypeScript`
       **[(TS-tipp #3)](#3-wrap-functions-that-have-no-strong-typings)**
 
@@ -357,7 +331,7 @@ This chapter shows how you can define events that a component emits.
 
 #### other
 
--  **[type cast in markup](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/07-other/01-type-cast-in-markup)**:
+-  **[type cast in markup](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/07-other/01-type-cast-in-markup)**:
    how to cast a type within the markup
 
 <!------------------------------------------------------------------------------------------------>
@@ -367,7 +341,7 @@ This chapter shows how you can define events that a component emits.
 
 In this chapter you get to know how to type the backend of your `SvelteKit` application.
 
--  **[hooks](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/hooks.server.ts)**:
+-  **[hooks](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/hooks.server.ts)**:
    how to intercept and modify requests
 
    > https://kit.svelte.dev/docs/hooks#server-hooks
@@ -403,7 +377,7 @@ In this chapter you get to know how to type the backend of your `SvelteKit` appl
 
 <!------------------------------------------------------------------------------------------------>
 
--  **[endpoints](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/routes/products/[id].ts)**:
+-  **[endpoints](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/routes/products/[id].ts)**:
    how to use `SvelteKit` as an API-endpoint
 
    > https://kit.svelte.dev/docs/routing#endpoints
@@ -436,7 +410,7 @@ In this chapter you get to know how to type the backend of your `SvelteKit` appl
 
 <!------------------------------------------------------------------------------------------------>
 
--  **[load function](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/routes/products/[id].svelte)**:
+-  **[load function](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/routes/products/[id].svelte)**:
    how to load data before the page gets rendered
 
    > https://kit.svelte.dev/docs/loading
@@ -501,7 +475,7 @@ strong typed functions within the code base.
 
 #### #1 union types
 
-> [Example](https://github.com/ivanhofer/sveltekit-typescript-showcase/tree/main/src/01-props/03-control-flow/ImprovedComponent.svelte)
+> [Example](https://github.com/extremeeventer/sveltekit-typescript-showcase/tree/main/src/01-props/03-control-flow/ImprovedComponent.svelte)
 
 You can use union types to narrow down types in the control flow of your application. Somewhere you
 probably need to fetch data from an api. The fetch function will probably either return data or an
@@ -603,7 +577,7 @@ const result = someFunction()
 
 #### #3 wrap functions that have no strong typings
 
-> [Example](https://github.com/ivanhofer/sveltekit-typescript-showcase/blob/main/src/06-state-management/03-context-outsourced/slider-context.ts)
+> [Example](https://github.com/extremeeventer/sveltekit-typescript-showcase/blob/main/src/06-state-management/03-context-outsourced/slider-context.ts)
 
 Whenever you are using a function that has no or not so good `TypeScript` definitions or whenever
 you need to cast something everytime you use a function, you should wrap it into a new function and
@@ -653,7 +627,7 @@ change it in a single place (and let `TypeScript` tell you if it's now getting u
 
 #### #4 use `opaque-types` for unique types
 
-> [Example](https://github.com/ivanhofer/sveltekit-typescript-showcase/blob/main/src/models/product.model.ts)
+> [Example](https://github.com/extremeeventer/sveltekit-typescript-showcase/blob/main/src/models/product.model.ts)
 
 Some types may look similar to another type but they are not actually related. If you are working
 with databases the `ID` field would be such a case.
@@ -752,7 +726,7 @@ Like you already have seen in the example from [TS-tipp #4](#4-use-opaque-types-
 strings are really generic and can hold any kind of data. Luckily `TypeScript` is flexible enough to
 let us define which shape we expect the data.
 
-> [Example](https://github.com/ivanhofer/sveltekit-typescript-showcase/blob/main/src/models/tagged-template-literals.model.ts)
+> [Example](https://github.com/extremeeventer/sveltekit-typescript-showcase/blob/main/src/models/tagged-template-literals.model.ts)
 
 ```ts
 // a list of possible options (`enum`-like)
@@ -873,11 +847,11 @@ learn more about the `JSDoc`-syntax.
 
 ## Sponsors
 
-[Become a sponsor :heart:](https://github.com/sponsors/ivanhofer) if you want to support my open source contributions.
+[Become a sponsor :heart:](https://github.com/sponsors/extremeeventer) if you want to support my open source contributions.
 
 <p align="center">
-   <a href="https://cdn.jsdelivr.net/gh/ivanhofer/sponsors/sponsorkit/sponsors.svg" title="ivanhofer's sponsors">
-      <img src="https://cdn.jsdelivr.net/gh/ivanhofer/sponsors/sponsorkit/sponsors.svg" alt="ivanhofer's sponsors" />
+   <a href="https://cdn.jsdelivr.net/gh/extremeeventer/sponsors/sponsorkit/sponsors.svg" title="extremeeventer's sponsors">
+      <img src="https://cdn.jsdelivr.net/gh/extremeeventer/sponsors/sponsorkit/sponsors.svg" alt="extremeeventer's sponsors" />
    </a>
 </p>
 
